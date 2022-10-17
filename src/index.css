@@ -1,0 +1,44 @@
+body{
+  background-color: grey;
+}
+.main{
+  background-color:aliceblue;
+    width: calc(70vh);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.main1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.myimage{
+  margin-left: 20px;
+}
+
+.myimage img{
+  border-radius: 15px;
+}
+
+.content{
+  text-align:justify;
+}
+
+.date-time{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.date-time a button{
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: black;
+  color: rgb(57, 161, 196);
+}
