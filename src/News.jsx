@@ -4,16 +4,17 @@ const News = () => {
     const [data, setdata] = useState([]);
 
     const getnewsapi = async () => {
-        const res = await fetch("https://newsapi.org/v2/everything?q=apple&from=2022-10-16&to=2022-10-16&sortBy=popularity&apiKey=7163775b860f49ffa623434555eb5e5e"); //in pending state
+        const res = await fetch(
+            `https://newsapi.org/v2/everything?q=apple&from=2022-10-18&to=2022-10-18&sortBy=popularity&apiKey=4ce05c0b050a400ca73d55a48ff224cb`); //in pending state
         const actualdata = await res.json();
-        // console.log(actualdata.articles[0].source);
+        // console.log(actualdata.articles);
         setdata(actualdata.articles);
     };
 
+    
     useEffect(() => {
         getnewsapi();
     }, []);
-
 
 
     return (
@@ -54,6 +55,5 @@ const News = () => {
     )
 
 }
-
 
 export default News;
