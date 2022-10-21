@@ -10,6 +10,7 @@ body{
   border: 2px solid black;
   border-radius: 15px;
   padding: 10px;
+
 }
 
 .main1{
@@ -25,20 +26,48 @@ body{
   border-radius: 15px;
 }
 
-.content{
-  text-align:justify;
-}
+
 
 .date-time{
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  gap: 40px;
 }
 
-.date-time a button{
-  padding: 8px;
-  margin-top: 8px;
-  border-radius: 15px;
+
+input{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+input:focus,
+  input:active,
+  input:active:focus {
+    outline: none;
+  }
+
+.mybtn{
+  padding: 5px;
+  margin-left: 8px;
+  border-radius: 10px;
   cursor: pointer;
+  background-color: white;
+  color: black;
+  
+}
+
+.mybtn:hover{
   background-color: black;
   color: rgb(57, 161, 196);
+}
+
+.center{
+  margin-top: 20px;
+    text-align: center; 
+}
+
+@media (max-width:768px) {
+
 }
